@@ -3,12 +3,15 @@
 <head>
     <title>Akshay Kumar - Resume</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex; /* Enables side-by-side layout */
+            flex-direction: row; /* Places items horizontally */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-wrap: nowrap; /* Ensure the sidebar and content are in a row */
             background-color: #f0f4f7;
         }
         .profile-pic {
@@ -23,13 +26,13 @@
         .sidebar {
             background: linear-gradient(135deg, #1c7cd6, #0056a6);
             padding: 20px;
-            width: 300px; /* Fixed width for sidebar */
+            width: 300px; /* Fixed width for the sidebar */
             color: white;
-            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            flex-shrink: 0; /* Prevent sidebar from shrinking */
         }
         .sidebar h2 {
             font-size: 1.8em;
@@ -51,12 +54,12 @@
             color: #f0f4f7;
         }
         .content {
-            flex-grow: 1;
+            flex-grow: 1; /* Ensures the content takes up remaining space */
             background-color: white;
             padding: 20px;
             box-sizing: border-box;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            min-height: 100vh; /* Ensure content stretches full height */
+            min-height: 100vh; /* Full viewport height */
         }
         .content h1, .content h2 {
             text-align: center;
@@ -88,14 +91,13 @@
         }
         @media (max-width: 768px) {
             body {
-                flex-wrap: wrap; /* Stack the sidebar and content vertically on smaller screens */
+                flex-direction: column; /* Stack items vertically on small screens */
             }
             .sidebar {
                 width: 100%;
             }
             .content {
                 width: 100%;
-                padding: 10px;
             }
         }
     </style>
@@ -162,5 +164,6 @@
     </div>
 </body>
 </html>
+
 
 

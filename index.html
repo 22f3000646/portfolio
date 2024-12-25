@@ -1,154 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Akshay Kumar - Resume</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
+            flex-wrap: wrap;
+            background-color: #f0f4f7;
         }
         .profile-pic {
-            display: inline-block;
             border-radius: 50%;
-            width: 100px; /* Adjust the width as needed */
-            height: 100px; /* Ensures the image stays circular */
-            object-fit: cover; /* Ensures the image covers the container without distortion */
-            margin-top: 10px; /* Adjust the top margin as needed */
-            margin-left: 10px; /* Adjust the left margin as needed */
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 3px solid #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         .sidebar {
-            background-color: rgb(28, 124, 214);
+            background: linear-gradient(135deg, #1c7cd6, #0056a6);
             padding: 20px;
-            width: 800px; /* Adjust the width as needed */
+            width: 350px;
             color: white;
-            box-sizing: border-box; /* Include padding in the element's total width and height */
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
+        }
+        .sidebar h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
         }
         .sidebar table {
             width: 100%;
+            margin-top: 20px;
+            font-size: 1em;
         }
         .sidebar th, .sidebar td {
-            padding: 10px;
+            padding: 8px;
             text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
         .sidebar th {
-            font-size: 1.5em;
+            text-align: center;
+            font-size: 1.3em;
+            color: #f0f4f7;
         }
         .content {
-            background-color: #f5f5f5;
             flex-grow: 1;
+            background-color: white;
             padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .content h1 {
-            text-align:center;
-            margin-top: 0;
+        .content h1, .content h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .content p, .content ol {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .content a {
+            color: #0056a6;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
+        table.projects {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table.projects th, table.projects td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table.projects th {
+            background-color: #f0f4f7;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+            }
+            .content {
+                width: 100%;
+                padding: 10px;
+            }
         }
     </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="sidebar">
         <img class="profile-pic" src="akshay.jpg" alt="Profile Picture">
+        <h2>Akshay Kumar</h2>
+        <p>Bachelor's in Data Science & Electronics System Engineering</p>
         <table>
             <tr>
                 <th>Skills</th>
             </tr>
-            <tr>
-                <td>JAVA</td>
-            </tr>
-            <tr>
-                <td>DSA</td>
-            </tr>
-            <tr>
-                <td>PYTHON</td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-            </tr>
-            <tr>
-                <td>JAVASCRIPT</td>
-            </tr>
-            <tr>
-                <td>LINUX</td>
-            </tr>
-            <tr>
-                <td>DBMS</td>
-            </tr>
-            <tr>
-                <td>Machine Learning</td>
-            </tr>
-            <tr>
-                <td>Software Best Practices</td>
-            </tr>
-            <tr>
-                <td>Website Optimization</td>
-            </tr>
-            <tr>
-                <td>Technical Analysis</td>
-            </tr>
-            <tr>
-                <td>Web Development Projects</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-            </tr>
-            <tr>
-                <td>PostgreSQL</td>
-            </tr>
+            <tr><td>Python, Java, JavaScript</td></tr>
+            <tr><td>HTML, CSS, Flask, SQLite</td></tr>
+            <tr><td>Machine Learning (NumPy, Pandas, scikit-learn)</td></tr>
+            <tr><td>Data Analysis, SQL, PostgreSQL</td></tr>
+            <tr><td>Web Development, DSA, Linux</td></tr>
+            <tr><td>Technical Analysis</td></tr>
         </table>
     </div>
     <div class="content">
         <h1>Akshay Kumar</h1>
-        <p style="text-align:center;"><a href="https://www.linkedin.com/in/akshay-kumar-ab3002256/">Linked in</a> | <a href="https://github.com/22f3000646">Git hub</a></p>
-        <hr>
-        <h1>About</h1>
-        <p>
-            Aspiring Data Scientist and Web Developer. As a dedicated and detail-oriented fresher, I am eager to launch my career in the fields of Data Science and Web Development. My robust foundation in computer science, combined with hands-on experience in developing web applications, equips me with the technical skills and analytical mindset necessary to excel in these dynamic industries.
-        </p>
-        <p>
-            I have honed my abilities in front-end development, creating intuitive and responsive user interfaces, and am currently expanding my expertise in JavaScript. My passion for learning and problem-solving drives me to continuously enhance my skills and stay updated with the latest industry trends. As I embark on the journey to master machine learning and data science, I am excited to apply my knowledge and contribute to innovative projects that make data-driven decisions and deliver impactful user experiences.
+        <p style="text-align:center;">
+            <a href="https://www.linkedin.com/in/akshay-kumar-ab3002256/">LinkedIn</a> | 
+            <a href="https://github.com/22f3000646">GitHub</a>
         </p>
         <hr>
-    <h1>Education Qualification</h1>
-    <p style=" white-space: pre;">
-        <b>     Loyola High School                                                                                                                                                                                   percent: 87.4</b>
-                  Class 12 
-                  PCM 
-</p>
-    <p style=" white-space: pre;">
-              <b>IIT MADRAS                                                                                                                                                                                               Cgpa: 9.00</b>
-                Bs 
-                data science and Programming
-    </p>
-    <p style=" white-space: pre;">
-        <b>     National institute of electronics and information Technology                                                                                                               Cgpa: 8.00</b>
-                  Bachelors of technology 
-                  Electronics system Engineering
-</p>
-<hr>
-
-<h1>Projects</h1>
-<table style="font-size: 1.5em;">
-    <tr>
-        <td>A.)THE influence Mart:-A web app platform for the coordination between sponsors and influencers to connect .<br>
-            <br><br>
-                Skills used:-
-            <ol>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Flask</li>
-                <li>Bootstrap</li>
-            </ol>
-        </td>
-    </tr>
-</table>
+        <h2>About Me</h2>
+        <p>
+            Aspiring Data Scientist and Web Developer with a strong foundation in computer science and hands-on experience in building impactful projects. 
+            I am currently enhancing my expertise in machine learning, data science, and web technologies.
+        </p>
+        <hr>
+        <h2>Education</h2>
+        <p><b>Loyola High School</b> - Class 12, PCM (87.4%)</p>
+        <p><b>IIT Madras</b> - BS in Data Science & Programming (CGPA: 9.00)</p>
+        <p><b>National Institute of Electronics & IT</b> - B.Tech in Electronics System Engineering (CGPA: 8.00)</p>
+        <hr>
+        <h2>Projects</h2>
+        <table class="projects">
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies</th>
+            </tr>
+            <tr>
+                <td>Influence Mart</td>
+                <td>A platform for seamless collaboration between sponsors and influencers.</td>
+                <td>HTML, CSS, Flask, Bootstrap</td>
+            </tr>
+            <tr>
+                <td>Household Services App</td>
+                <td>An app connecting users to household service providers efficiently.</td>
+                <td>JavaScript, SQLite, Flask</td>
+            </tr>
+            <tr>
+                <td>Stocks Pro</td>
+                <td>Stock prediction tool using machine learning models with Kaggle datasets.</td>
+                <td>Python, scikit-learn, Pandas</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
+
